@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+import { HashRouter, Routes, Route, NavLink } from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Thoughts from './pages/Thoughts'
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#18181b] text-[#52525b] dark:text-[#a1a1aa] antialiased transition-colors duration-200">
-      <BrowserRouter>
+      <HashRouter>
         <div className="max-w-2xl mx-auto px-6 pt-10 pb-16 flex flex-col min-h-screen">
           {/* Header */}
           <header className="flex items-baseline justify-between mb-14">
@@ -129,7 +129,7 @@ function App() {
             </button>
           </footer>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }

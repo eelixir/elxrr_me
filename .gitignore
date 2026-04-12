@@ -10,3 +10,12 @@ Thumbs.db
 # Editor directories
 .vscode/
 .idea/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Claude Code
+.claude/

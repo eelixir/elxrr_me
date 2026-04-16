@@ -123,14 +123,16 @@ export default function Projects() {
                   {l.label}
                 </a>
               ))}
-              {p.repo && (stars[p.repo] != null || p.fallbackStars != null) && (
-                <span className="flex items-center gap-1.5 text-[14px] text-[#a1a1aa] dark:text-[#71717a]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#eab308" stroke="none">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                  </svg>
-                  {stars[p.repo] ?? p.fallbackStars}
-                </span>
-              )}
+              {p.repo &&
+                p.name !== 'Llama-3-8B Chain-of-Thought Fine-Tune' &&
+                (stars[p.repo] != null || p.fallbackStars != null) && (
+                  <span className="flex items-center gap-1.5 text-[14px] text-[#a1a1aa] dark:text-[#71717a]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#eab308" stroke="none">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    {stars[p.repo] ?? p.fallbackStars}
+                  </span>
+                )}
             </div>
             <span className="text-[13px] text-[#a1a1aa] dark:text-[#52525b] hidden sm:block">
               {p.tech.join(' · ')}

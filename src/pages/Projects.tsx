@@ -13,6 +13,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: 'Llama-3-8B Chain-of-Thought Fine-Tune',
+    date: '2026',
+    repo: 'eelixir/mercury',
+    href: 'https://github.com/eelixir/mercury',
+    summary: 'Fine-tuned Meta-Llama-3-8B-Instruct to implement "System 2" reasoning, enhancing the model\'s ability to solve complex logic puzzles, coding problems, and riddles.',
+    tech: ['Python', 'Jupyter Notebooks'],
+    links: [{ label: 'GitHub', href: 'https://github.com/eelixir/llama3-cot-enforcery' }],
+  },
+  {
     name: 'Mercury',
     date: '2025',
     repo: 'eelixir/mercury',
